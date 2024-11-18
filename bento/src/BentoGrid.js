@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import './BentoGrid.css';
+import LogoPannel from "./LogoPanel";
+import Typewriter from 'typewriter-effect';
 
 const BentoItem =({ content, columnSpan, rowSpan}) =>{
     const baseHeight = 100; // Base height for rowSpan
@@ -31,38 +33,30 @@ const BentoGrid = () => {
         {
             id: 1,
             content: 
-                <div>
-                    <p>Test</p>
-                </div>,
-            columnSpan: 2,
-            rowSpan: 1
-        },
-        {
-            id: 3,
-            content: 
-                <div>
-                    <p>Test</p>
-                </div>,
+            <LogoPannel
+                LogoTekst={"Sander Meijer"}
+                logoDescription={[
+                    " ",
+                    <Typewriter
+                        key="typewriter" // Add a key to ensure the component is re-rendered correctly
+                        options={{
+                            strings: [
+                                'Game Developer 🎮',
+                                'Programmer 💻',
+                                'Designer ✨',
+                                'Team Player 💪',
+                                'Artist 🎨',
+                                'Coffee Enjoyer ☕'
+                            ],
+                            delay: 50,
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                ]}
+            />,
             columnSpan: 2,
             rowSpan: 3
-        },
-        {
-            id: 1,
-            content: 
-                <div>
-                    <p>Test</p>
-                </div>,
-            columnSpan: 1,
-            rowSpan: 1
-        },
-        {
-            id: 1,
-            content: 
-                <div>
-                    <p>Test</p>
-                </div>,
-            columnSpan: 1,
-            rowSpan: 1
         },
     ];
 
