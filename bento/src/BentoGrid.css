@@ -19,6 +19,14 @@
     overflow: hidden;
     height: 100%;
     min-height: 0;
+    outline-style: solid;
+    outline-color: #fff;
+    transition: all 125ms ease-in-out;
+}
+
+.bento-item:hover{
+  outline-width: 10px;
+  font-size: 115%;
 }
 
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import './BentoGrid.css';
 import LogoPannel from "./LogoPanel";
 import Typewriter from 'typewriter-effect';
+import Footer from "./Footer";
 
 const BentoItem =({ content, columnSpan, rowSpan}) =>{
     const baseHeight = 100; // Base height for rowSpan
@@ -96,7 +97,7 @@ const BentoGrid = () => {
         },
         {
             id: 8,
-            content: "8",
+            content: <Footer />,
             columnSpan: 1,
             rowSpan: 1
         },
