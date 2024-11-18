@@ -32,6 +32,30 @@ const BentoGrid = () => {
     const items = [
         {
             id: 1,
+            content: "1",
+            columnSpan: 1,
+            rowSpan: 3
+        },
+        {
+            id: 2,
+            content: "2",
+            columnSpan: 1,
+            rowSpan: 1
+        },
+        {
+            id: 3,
+            content: "3",
+            columnSpan: 1,
+            rowSpan: 1
+        },
+        {
+            id: 4,
+            content: "4",
+            columnSpan: 1,
+            rowSpan: 2
+        },
+        {
+            id: 5,
             content: 
             <LogoPannel
                 LogoTekst={"Sander Meijer"}
@@ -57,6 +81,30 @@ const BentoGrid = () => {
             />,
             columnSpan: 2,
             rowSpan: 3
+        },
+        {
+            id: 6,
+            content: "6",
+            columnSpan: 1,
+            rowSpan: 2
+        },
+        {
+            id: 7,
+            content: "7",
+            columnSpan: 1,
+            rowSpan: 2
+        },
+        {
+            id: 8,
+            content: "8",
+            columnSpan: 1,
+            rowSpan: 1
+        },
+        {
+            id: 9,
+            content: "9",
+            columnSpan: 2,
+            rowSpan: 1
         },
     ];
 
