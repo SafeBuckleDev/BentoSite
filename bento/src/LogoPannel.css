@@ -1,15 +1,16 @@
 .logo-banner{
+    width: 100%;
     text-align: center;
 }
 
 .logo-banner h1{
     font-size: 300%;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: var(--textGradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .logo-banner p{
     font-size: 125%;
-    color: #000;
+    color: var(--textColor);
 }

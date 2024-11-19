@@ -10,23 +10,35 @@
 }
 
 .bento-item{
-    background-color: #fff;
+    background-color: var(--gridColor);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    overflow: hidden;
+    height: 0;
     height: 100%;
-    min-height: 0;
-    outline-style: solid;
-    outline-color: #fff;
     transition: all 125ms ease-in-out;
+    position: relative;
 }
 
-.bento-item:hover{
-  outline-width: 10px;
-  font-size: 115%;
+.bento-item.specialBorder::before,
+.bento-item.specialBorder::after {
+  content: "";
+  position: absolute;
+  inset: -.3rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradientAngle),
+    var(--textGradientColor1),
+    var(--textGradientColor2),
+    var(--textGradientColor3),
+    var(--textGradientColor2),
+    var(--textGradientColor1)
+  );
+  border-radius: inherit;
+  animation: gradientRotation 10s linear infinite;
+  pointer-events: none; /* Prevents the pseudo-elements from blocking interactions */
 }
 
 @media (max-width: 768px) {

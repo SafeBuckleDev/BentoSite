@@ -1,5 +1,39 @@
-.App{
-  height: 100vh;
-  background: rgb(255,255,255);
-  background: linear-gradient(169deg, rgba(255,255,255,1) 0%, rgba(248,235,254,1) 37%, rgba(220,248,255,1) 100%);
+:root{
+  --textColor: #e5e2eb;
+  --gridColor: #2e3138;
+
+  --textGradient: linear-gradient(45deg, var(--textGradientColor1), var(--textGradientColor2), var(--textGradientColor3));
+  --textGradientColor1: #833ab4;
+  --textGradientColor2: #fd1d1d;
+  --textGradientColor3: #fcb045;
+
+  --backgroundGradient: radial-gradient(circle, rgba(38,40,47,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+@property --gradientAngle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes gradientRotation {
+  0% { --gradientAngle: 0deg;}
+  100% { --gradientAngle: 360deg;}
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  color: var(--textColor);
+  background: var(--backgroundGradient);
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%; /* ensures that the background covers the entire page */
+  margin: 0;
 }
