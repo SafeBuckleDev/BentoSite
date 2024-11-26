@@ -16,7 +16,6 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 0;
     height: 100%;
     transition: all 125ms ease-in-out;
     position: relative;
@@ -39,6 +38,21 @@
   border-radius: inherit;
   animation: gradientRotation 10s linear infinite;
   pointer-events: none; /* Prevents the pseudo-elements from blocking interactions */
+}
+
+.bento-outer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bento-outer img{
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {

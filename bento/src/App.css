@@ -1,11 +1,12 @@
 :root{
   --textColor: #e5e2eb;
   --gridColor: #2e3138;
+  --gridInnerColor: rgba(38,40,47,1);
 
   --textGradient: linear-gradient(45deg, var(--textGradientColor1), var(--textGradientColor2), var(--textGradientColor3));
-  --textGradientColor1: #833ab4;
-  --textGradientColor2: #fd1d1d;
-  --textGradientColor3: #fcb045;
+  --textGradientColor1: #3c42c4;
+  --textGradientColor2: #ce79d2;
+  --textGradientColor3: #f4dfbe;
 
   --backgroundGradient: radial-gradient(circle, rgba(38,40,47,1) 0%, rgba(0,0,0,1) 100%);
 }
@@ -36,4 +37,12 @@ html, body {
   width: 100%;
   min-height: 100%; /* ensures that the background covers the entire page */
   margin: 0;
+}
+
+.SpecialTekst{
+  text-align: center;
+  font-size: 200%;
+  background: var(--textGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

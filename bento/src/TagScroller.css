@@ -1,0 +1,42 @@
+.inner {
+margin: auto;
+position: relative;
+overflow: hidden;
+height: 55px;
+
+-webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+)
+}
+
+.wrapper{
+    display: flex;
+}
+
+.skillTag{
+    background: var(--gridInnerColor);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+.wrapper section {
+    display: flex;
+    animation: SkillScroll var(--speed) linear infinite backwards;
+}
+
+@keyframes SkillScroll {
+    0% {
+      transform: translate(0);
+    }
+  
+    100% {
+      transform: translate(-100%);
+    }
+  }

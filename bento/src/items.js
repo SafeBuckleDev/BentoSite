@@ -2,11 +2,20 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 import LogoPannel from "./LogoPanel";
 import Footer from "./Footer";
+import { Scroller } from "./TagScroller";
+import GifHoverer from "./GifHover";
+import SplitCover from "./SplitCover";
+import rotCube from "./assets/cube_rotate.gif"
 
 const items = [
     {
         id: 1,
-        content: "1",
+        content: <SplitCover 
+            topPercentage={"60%"}
+            contentTop={<div>Hello</div>}
+            contentBottom={<div>Hello</div>}
+            bottomPercentage={"40%"}
+        />,
         columnSpan: 1,
         rowSpan: 3,
         hasSpecialBorder: false,
@@ -27,7 +36,10 @@ const items = [
     },
     {
         id: 4,
-        content: "4",
+        content: <GifHoverer 
+            img={ rotCube }
+            title={ "Visualize" }
+        />,
         columnSpan: 1,
         rowSpan: 2,
         hasSpecialBorder: false,
@@ -85,7 +97,10 @@ const items = [
     },
     {
         id: 9,
-        content: "9",
+        content: <Scroller 
+            tags={['Unity', 'C#', 'HTML', 'CSS', 'JavaScript', 'React', 'PHP']}
+            speed={15000}
+        />,
         columnSpan: 2,
         rowSpan: 1,
         hasSpecialBorder: false,

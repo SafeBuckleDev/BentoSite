@@ -1,0 +1,12 @@
+.Hoverer{
+    width: 100%;
+}
+
+.Hoverer h2{
+    margin-bottom: -10px;
+}
+
+.Hoverer img{
+    margin-bottom: -10px;
+    max-width: 100%;
+}

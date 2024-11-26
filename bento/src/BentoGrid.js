@@ -20,7 +20,9 @@ const BentoItem = ({ content, columnSpan, rowSpan, hasSpecialBorder }) => {
 
     return (
         <div className={itemClass} style={style}>
-            {content}
+            <div className="bento-outer">
+                {content}
+            </div>
         </div>
     );
 };
