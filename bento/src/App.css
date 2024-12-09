@@ -46,3 +46,28 @@ html, body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.Switcher button{
+  font-size: 3em;
+  border: none;
+  background: none;
+}
+
+.Switcher button .icon {
+  color: var(--gridColor);
+  background-image: var(--textGradient);
+}
+
+.Switcher button.animate {
+  animation: ButtonSpin 0.5s ease;
+}
+
+@keyframes ButtonSpin {
+  0%{
+    transform: rotateZ(0deg);
+  }
+
+  100%{
+    transform: rotateZ(360deg);
+  }
+}

@@ -5,7 +5,8 @@ import Footer from "./Footer";
 import { Scroller } from "./TagScroller";
 import GifHoverer from "./GifHover";
 import SplitCover from "./SplitCover";
-import rotCube from "./assets/cube_rotate.gif"
+import ThemeSwitcher from "./ThemeSwitcher";
+import rotCube from "./assets/rotatingCube.webm"
 
 const items = [
     {
@@ -22,7 +23,7 @@ const items = [
     },
     {
         id: 2,
-        content: "2",
+        content: <ThemeSwitcher />,
         columnSpan: 1,
         rowSpan: 1,
         hasSpecialBorder: false,
@@ -37,7 +38,7 @@ const items = [
     {
         id: 4,
         content: <GifHoverer 
-            img={ rotCube }
+            vid={ rotCube }
             title={ "Visualize" }
         />,
         columnSpan: 1,

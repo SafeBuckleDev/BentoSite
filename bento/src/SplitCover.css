@@ -1,6 +1,12 @@
 .SplitTop{
 }
 
+.Devider{
+    border-radius: 50% 50% 0% 0%;
+    background-color: var(--textGradientColor2);
+    margin-bottom: -1.5em;
+}
+
 .SplitBottom{
     background-color: var(--textGradientColor2);
 }

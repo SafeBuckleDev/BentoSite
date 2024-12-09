@@ -6,6 +6,7 @@ const SplitCover = ({topPercentage, bottomPercentage, contentTop, contentBottom}
             <div className="SplitTop" style={{height: topPercentage}}>
                 {contentTop}
             </div>
+            <div className="Devider" style={{height: "20%"}}></div>
             <div className="SplitBottom" style={{height: bottomPercentage}}>
                 {contentBottom}
             </div>

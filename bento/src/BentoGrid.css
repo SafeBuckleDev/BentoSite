@@ -38,6 +38,7 @@
   border-radius: inherit;
   animation: gradientRotation 10s linear infinite;
   pointer-events: none; /* Prevents the pseudo-elements from blocking interactions */
+  transform: none;
 }
 
 .bento-outer{
